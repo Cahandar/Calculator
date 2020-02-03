@@ -1,0 +1,56 @@
+#kakulyator{
+    background-color: #ffb717;
+    width: 570px;
+    margin: auto;
+    border-radius: 30px;
+}
+.container{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.container button{
+    background-color: #ffed1d;
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    color: #dcaa61;
+}
+.container input{
+    width: 500px;
+    height: 120px;
+    margin: auto;
+    background-color: #866339;
+    border-radius: 20px;
+    text-align: right;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-right: 30px;
+    color: #feee15;
+}
+.container input::placeholder{
+    color: #feee15;
+}
+.container .emel{
+    background-color: #ff7900;
+    color: #ffee1e;
+    font-size: 30px ;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#eq{
+    margin-bottom: 30px;
+}

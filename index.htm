@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Kakulyator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="kakulyator" >
+        <div class="container">
+
+            <input type="text" id="a" placeholder="0">
+
+            <button value="7" onclick="gonder(7)">7</button>
+            <button value="8" onclick="gonder(8)">8</button>
+            <button value="9" onclick="gonder(9)">9</button>
+            <button class="emel" value="/" onclick="gonder('/')">/</button>
+
+            <button value="4" onclick="gonder(4)">4</button>
+            <button value="5" onclick="gonder(5)">5</button>
+            <button value="6" onclick="gonder(6)">6</button>
+            <button class="emel" value="*" onclick="gonder('*')">*</button>
+
+            <button value="1" onclick="gonder(1)">1</button>
+            <button value="2" onclick="gonder(2)">2</button>
+            <button value="3" onclick="gonder(3)">3</button>
+            <button class="emel" value="-" onclick="gonder('-')">-</button>
+
+            <button value="0" onclick="gonder(0)">0</button>
+            <button value="." onclick="gonder('.')">&#9679;</button>
+            <button class="emel" value="+" onclick="gonder('+')">+</button>
+
+            <button class="emel" id="eq" value="=" onclick="hesabla()">=</button>
+
+        </div>
+    </div>
+    <script>
+
+        function gonder(eded) {
+
+            document.getElementById("a").value = document.getElementById("a").value + eded
+        }
+        function hesabla() {
+
+            document.getElementById("a").value = eval(document.getElementById("a").value);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
